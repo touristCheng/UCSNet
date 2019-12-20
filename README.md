@@ -19,4 +19,5 @@ reconstruction results on DTU dataset:
 
 ## Todo
 * training/testing code
+* pre-trained models
 * depth fusion
