@@ -15,4 +15,8 @@ Eprint = {arXiv:1911.12012},
 
 reconstruction results on DTU dataset:
 
-<img src="results/dtu.png" width="250">
+![dtu](results/dtu.png)
+
+##Todo
+* training/testing code
+* depth fusion
