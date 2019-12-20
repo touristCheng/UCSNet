@@ -17,6 +17,6 @@ reconstruction results on DTU dataset:
 
 ![dtu](results/dtu.png)
 
-##Todo
+## Todo
 * training/testing code
 * depth fusion
