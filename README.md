@@ -21,3 +21,5 @@ reconstruction results on DTU dataset:
 * training/testing code
 * pre-trained models
 * depth fusion
+
+The code will be available after the paper be accepted.
