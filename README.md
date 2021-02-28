@@ -76,6 +76,20 @@ IMAGE_ID1                       # index of reference image 1
 Note: For DTU results, the fusion is performed on an NVIDIA GTX 1080Ti. For Tanks and Temple results, the fusion is performed on an NVIDIA P6000, as fusibile requires to read in the depth maps all in once, you may need a GPU with memory around 20GB. 
 You can decrease the depth resolution in previous computing step or try [our implementation](https://github.com/touristCheng/DepthFusion) for depth fusion
 
+#### DTU Evaluation:
+
+* Download the offical evaluation tool from [DTU benchmark](http://roboimagedata.compute.dtu.dk/?page_id=36)
+* Put the ground-truth point clouds and the predicted point clouds in the ``MVS Data/Points`` folder
+* In ``GetUsedSets.m``, modify the ``UsedSets`` to be ``[1 4 9 10 11 12 13 15 23 24 29 32 33 34 48 49 62 75 77 110 114 118]`` as that are the test objects used in the literatures, then calculate the scores using ``BaseEvalMain_web.m`` and ``ComputeStat_web.m``
+* The accuracy of each object is stored in ``BaseStat.MeanData``, and the completeness of each object is stored in ``BaseStat.MeanStl``, use the average number as the final accuracy and completeness
+* We also provide our pre-computed [point clouds](https://drive.google.com/file/d/1o3kkoXUMzCvluU9_grZ0rmZJb_NTSYjf/view?usp=sharing) for your convenience, the evaluation results are:
+
+| Accuracy   | Completeness  | Overall |
+|------------|---------------|---------|
+|   0.3388   |     0.3456    | 0.3422 |
+
+
+
 ### Training
 * Install NVIDIA [apex](https://github.com/NVIDIA/apex) for using Synchronized Batch Normalization
 * Download pre-processed DTU [training data](https://drive.google.com/file/d/1eDjh-_bxKKnEuz5h-HXS7EDJn59clx6V/view) from MVSNet, and download our rendered full resolution [ground-truth](https://drive.google.com/file/d/1krVT3FMfP3M7qtYRN9tn358a1YnXL7KQ/view?usp=sharing). Place the ground-truth in root directory, the train set need to be organized as:
