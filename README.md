@@ -82,7 +82,7 @@ You can decrease the depth resolution in previous computing step or try [our imp
 * Put the ground-truth point clouds and the predicted point clouds in the ``MVS Data/Points`` folder
 * In ``GetUsedSets.m``, modify the ``UsedSets`` to be ``[1 4 9 10 11 12 13 15 23 24 29 32 33 34 48 49 62 75 77 110 114 118]`` as that are the test objects used in the literatures, then calculate the scores using ``BaseEvalMain_web.m`` and ``ComputeStat_web.m``
 * The accuracy of each object is stored in ``BaseStat.MeanData``, and the completeness of each object is stored in ``BaseStat.MeanStl``, use the average number as the final accuracy and completeness
-* We also provide our pre-computed [point clouds](https://drive.google.com/file/d/1o3kkoXUMzCvluU9_grZ0rmZJb_NTSYjf/view?usp=sharing) for your convenience, the evaluation results are:
+* We also provide our pre-computed [point clouds](https://drive.google.com/file/d/18bk-153cdPs5ehi_JjOHx9h1N9zhrPkW/view?usp=sharing) for your convenience, the evaluation results are:
 
 | Accuracy   | Completeness  | Overall |
 |------------|---------------|---------|
