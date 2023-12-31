@@ -37,7 +37,7 @@ reconstruction results on DTU dataset:
 ### Reproducing Results
 
 #### Compute Depth:
-* Download pre-processed testset:  [Tanks and Temples](https://drive.google.com/open?id=12pvZ8nksx4yNBU1EN_vK6-2PNi7qyLmI) and [DTU](https://drive.google.com/open?id=1Mfx1oDoAzPbiqfseD8r02czPaNjUoUMJ). Each dataset should be organized as the following:
+* Download pre-processed testset:  [Tanks and Temples](https://drive.google.com/file/d/1-6v88UcdKBSb8_c1FLH5kpwWQkHuQqaW/view?usp=sharing) and [DTU](https://drive.google.com/file/d/1SpyJSnj16XFhKXPHu8VcYwyQMCGc75bZ/view?usp=sharing). Each dataset should be organized as the following:
 
 ```
 root_directory
