@@ -92,7 +92,7 @@ You can decrease the depth resolution in previous computing step or try [our imp
 
 ### Training
 * Install NVIDIA [apex](https://github.com/NVIDIA/apex) for using Synchronized Batch Normalization
-* Download pre-processed DTU [training data](https://drive.google.com/file/d/1eDjh-_bxKKnEuz5h-HXS7EDJn59clx6V/view) from MVSNet, and download our rendered full resolution [ground-truth](https://drive.google.com/file/d/1krVT3FMfP3M7qtYRN9tn358a1YnXL7KQ/view?usp=sharing). Place the ground-truth in root directory, the train set need to be organized as:
+* Download pre-processed DTU [training data](https://drive.google.com/file/d/1ssnznSXyTCDgdXLr4497dQsSSREC8vVj/view?usp=sharing) from MVSNet, and download our rendered full resolution [ground-truth](https://drive.google.com/file/d/1KYP9XfEjzyzkKMxC-nyTvAdsNNU64UQM/view?usp=sharing). Place the ground-truth in root directory, the train set need to be organized as:
 
 ```
 root_directory
